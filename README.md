@@ -26,7 +26,7 @@ pnpm install
 
 ```env
 DATABASE_URL="postgresql://USER:PASSWORD@HOST.neon.tech/DB?sslmode=require"
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_URL="https://nfc-demo-lvd-x-blanxer.vercel.app"
 ```
 
 3. Run database migration and seed:
@@ -82,7 +82,7 @@ PIN: 2222
 
 ```env
 DATABASE_URL="NEON_POSTGRES_CONNECTION_STRING"
-NEXT_PUBLIC_APP_URL="https://your-vercel-domain.vercel.app"
+NEXT_PUBLIC_APP_URL="https://nfc-demo-lvd-x-blanxer.vercel.app"
 ```
 
 4. Deploy.
@@ -90,7 +90,7 @@ NEXT_PUBLIC_APP_URL="https://your-vercel-domain.vercel.app"
 6. Use NFC Tools app to write:
 
 ```text
-https://your-vercel-domain.vercel.app/nfc/lvd-card-001
+https://nfc-demo-lvd-x-blanxer.vercel.app/nfc/lvd-card-001
 ```
 
 ## Scripts

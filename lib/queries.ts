@@ -34,7 +34,7 @@ type PurchaseRow = {
   customer_id: string;
   item_name: string;
   amount: string;
-  purchase_date: string;
+  purchase_date: string | Date;
 };
 
 function mapCustomer(row: CustomerRow): Customer {
@@ -72,12 +72,17 @@ function mapStaff(row: StaffRow): StaffUser {
 }
 
 function mapPurchase(row: PurchaseRow): Purchase {
+  const purchaseDate =
+    row.purchase_date instanceof Date
+      ? row.purchase_date.toISOString().slice(0, 10)
+      : row.purchase_date;
+
   return {
     id: row.id,
     customerId: row.customer_id,
     itemName: row.item_name,
     amount: Number(row.amount),
-    purchaseDate: row.purchase_date,
+    purchaseDate,
   };
 }
 

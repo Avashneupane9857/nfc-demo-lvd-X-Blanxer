@@ -7,5 +7,5 @@ export function formatNpr(amount: number) {
 }
 
 export function getAppUrl() {
-  return process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+  return process.env.NEXT_PUBLIC_APP_URL || "https://nfc-demo-lvd-x-blanxer.vercel.app";
 }

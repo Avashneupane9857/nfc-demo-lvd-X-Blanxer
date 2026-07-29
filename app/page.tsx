@@ -2,7 +2,7 @@ import { AppShell, ActionLink, InfoPanel, PageTitle } from "@/app/components";
 import { getAppUrl } from "@/lib/format";
 
 export default async function Home() {
-  const cardUrl = `${getAppUrl()}/nfc/lvd-card-001`;
+  const cardUrl = `${getAppUrl()}/`;
 
   return (
     <AppShell>
